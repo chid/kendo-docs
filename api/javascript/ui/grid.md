@@ -2291,7 +2291,7 @@ Enables or disables column filtering in the Excel file. Not to be mistaken with 
 ### excel.proxyURL `String` *(default: null)*
 
 The URL of the server side proxy which will stream the Excel file to the end user. Used when the browser isn't capable of saving files from JavaScript. Such browsers are IE<10 and Safari.
-The developer is responsible for implementing the server-side proxy. Implementation instructions are available here.
+The developer is responsible for implementing the server-side proxy. Implementation instructions are available [here](/framework/save-files/introduction#server-proxy-implementations).
 
 #### Example - set the server proxy URL
     <div id="grid"></div>
