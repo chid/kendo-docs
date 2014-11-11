@@ -61,6 +61,14 @@ kendo.saveAs({
 
 ## Server Proxy Implementations
 
+The proxy will receive a POST request with the following parameters in the request body:
+
+* contentType: The MIME type of the file
+* base64: The base-64 encoded file content
+* fileName: The file name, as requested by the caller.
+
+The proxy should return the decoded file with set "Content-Disposition" header.
+
 Here are a few sample implementations of a server-side proxy for different platforms.
 
 ### ASP.NET MVC Proxy
